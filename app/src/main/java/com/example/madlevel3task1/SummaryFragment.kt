@@ -28,7 +28,7 @@ class SummaryFragment : Fragment() {
         val gameRating = arguments?.getFloat(ARG_GAME_RATING)
 
         txt_summary.text =
-            String.format("You rated %s with %.1f stars! Thanks?", gameName, gameRating)
+            String.format("You rated %s with %.1f stars! Thanks!", gameName, gameRating)
 
         btn_start_over.setOnClickListener {
             findNavController().navigate(R.id.action_summaryFragment_to_startFragment)
